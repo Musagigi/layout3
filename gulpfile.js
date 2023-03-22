@@ -27,7 +27,9 @@ function styles() {
 		.pipe(gulpIf(isMapForCss, sourcemaps.init()))
 		.pipe(less())
 		.pipe(gulpIf(isMinify, gcmq()))
-		.pipe(gulpIf(isMinify, autoprefixer({})))
+		.pipe(gulpIf(isMinify, autoprefixer({
+			grid: true,
+		})))
 		.pipe(gulpIf(isMinify, cleanCSS({ level: 1 })))
 		.pipe(gulpIf(isMapForCss, sourcemaps.write()))
 		.pipe(gulp.dest('./build/css'))
