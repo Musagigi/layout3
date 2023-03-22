@@ -7,7 +7,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="css/main.css" />
@@ -242,6 +242,23 @@
 								</article>
 							</li>
 						</ul>
+						<ul class="pagination">
+							<li class="pagination__item">
+								<a
+									class="pagnation__link pagnation__link_current"
+									>1</a
+								>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagnation__link">2</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagnation__link">3</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagnation__link">4</a>
+							</li>
+						</ul>
 					</div>
 					<aside class="sidebar">
 						<div class="popularArticle">
@@ -298,10 +315,52 @@
 								</li>
 							</ul>
 						</div>
-						<div class="subscribe"></div>
+						<div class="subscribe">
+							<h3 class="subscribe__title h2">
+								Подписка на рассылку
+							</h3>
+							<form action="#" class="subscribe__form subForm">
+								<input
+									class="subForm__email"
+									type="email"
+									placeholder="Email@gmail.com"
+								/>
+								<button class="subForm__btn">
+									Подписаться
+									<svg></svg>
+								</button>
+							</form>
+						</div>
 					</aside>
 				</div>
 			</section>
+
+			<footer class="footer">
+				<div class="container">
+					<a class="logo">
+						<img src="./img/header/logo.svg" alt="logo" />
+					</a>
+					<nav class="footerNav navigate">
+						<ul class="navigate__list">
+							<li class="navigate__item">
+								<a class="navigate__link" href="#">Главная</a>
+							</li>
+							<li class="navigate__item">
+								<a class="navigate__link" href="#">О нас</a>
+							</li>
+							<li class="navigate__item">
+								<a class="navigate__link" href="#">Контакты</a>
+							</li>
+							<li class="navigate__item">
+								<a class="navigate__link" href="#">Поиск</a>
+							</li>
+						</ul>
+					</nav>
+					<small class="footer__copy"
+						>ООО “Организация” 2020. Все права защищены</small
+					>
+				</div>
+			</footer>
 		</main>
 	</body>
 </html>
