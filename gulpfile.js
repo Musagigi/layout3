@@ -3,10 +3,10 @@ const del = require('del')
 const browserSync = require('browser-sync').create() //обнов. страницу, при измен.
 const less = require('gulp-less');
 const gulpIf = require('gulp-if')
-const cleanCSS = require('gulp-clean-css') // убирает лишние пробелы, табы и т.д.
+const cleanCSS = require('gulp-clean-css')
 const autoprefixer = require('gulp-autoprefixer')
-const gcmq = require('gulp-group-css-media-queries'); // объединяет медиа запросы
-const sourcemaps = require('gulp-sourcemaps') // карта по css
+const gcmq = require('gulp-group-css-media-queries');
+const sourcemaps = require('gulp-sourcemaps')
 
 // можно в package.json прописать в scripts укороч. запуск
 let isMinify = process.argv.includes('--mini') // forRelizBuild
@@ -52,8 +52,8 @@ function watch() {
 }
 
 
-// gulp.series - выполняет таски по очереди (завершится один, перейдет к другому)
-// gulp.parallel - выполняет одновременно (нач. и заверш. в любой последовательности)
+// gulp.series - выполняет таски по очереди
+// gulp.parallel - выполняет одновременно
 let build = gulp.parallel(html, styles, images)
 let buildWithClean = gulp.series(clean, build)
 
