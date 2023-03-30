@@ -7,7 +7,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="css/main.css" />
@@ -15,418 +15,94 @@
 	<body class="body">
 		<header class="header">
 			<div class="container">
-				<div class="headerContainer">
-					<a class="logo header__logo" href="#">
-						<svg
-							width="54"
-							height="56"
-							viewBox="0 0 54 56"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<ellipse
-								cx="24.0385"
-								cy="24"
-								rx="24.0385"
-								ry="24"
-								fill="#5D71DD"
-							/>
-							<g filter="url(#filter0_d_2_121)">
-								<ellipse
-									cx="37.0189"
-									cy="35.0401"
-									rx="12.9808"
-									ry="12.96"
-									fill="white"
-								/>
-							</g>
-							<defs>
-								<filter
-									id="filter0_d_2_121"
-									x="20.0381"
-									y="22.0801"
-									width="33.9619"
-									height="33.9199"
-									filterUnits="userSpaceOnUse"
-									color-interpolation-filters="sRGB"
-								>
-									<feFlood
-										flood-opacity="0"
-										result="BackgroundImageFix"
-									/>
-									<feColorMatrix
-										in="SourceAlpha"
-										type="matrix"
-										values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-										result="hardAlpha"
-									/>
-									<feOffset dy="4" />
-									<feGaussianBlur stdDeviation="2" />
-									<feColorMatrix
-										type="matrix"
-										values="0 0 0 0 0.224444 0 0 0 0 0.272708 0 0 0 0 0.533333 0 0 0 0.18 0"
-									/>
-									<feBlend
-										mode="normal"
-										in2="BackgroundImageFix"
-										result="effect1_dropShadow_2_121"
-									/>
-									<feBlend
-										mode="normal"
-										in="SourceGraphic"
-										in2="effect1_dropShadow_2_121"
-										result="shape"
-									/>
-								</filter>
-							</defs>
-						</svg>
-					</a>
-					<div class="headerMenu">
-						<nav class="headerMenu__nav navigate">
-							<ul class="navigate__list">
-								<li class="navigate__item">
-									<a
-										class="navigate__link navigate__link_focused"
-										href="#"
-										>Главная</a
-									>
-								</li>
-								<li class="navigate__item">
-									<a class="navigate__link" href="#">О нас</a>
-								</li>
-								<li class="navigate__item">
-									<a class="navigate__link" href="#"
-										>Контакты</a
-									>
-								</li>
-								<li class="navigate__item">
-									<a class="navigate__link" href="#">Поиск</a>
-								</li>
-							</ul>
-						</nav>
-						<a class="phone" href="tel: +798788787"
-							>+7 (987) 887-87</a
-						>
-					</div>
-				</div>
+				<a class="logo header__logo">
+					<img src="#" alt="logo" />
+				</a>
+				<button class="burger" aria-label="open menu">
+					<span class="burger__line"> </span>
+					<span class="burger__line"> </span>
+					<span class="burger__line"> </span>
+				</button>
 			</div>
 		</header>
 
-		<main>
-			<section class="banner">
-				<h1 class="visually-hidden">сайт-блог</h1>
-			</section>
-
-			<section class="content">
-				<div class="container gridContainer">
-					<div class="cards">
-						<article class="cardArticle cards__cardArticle">
-							<a
-								class="cardArticle__linkCategory cardArticle__linkCategory_offsetL"
-								href=""
-								>Категория 1
-							</a>
-
-							<h2 class="cardArticle__title">
-								Управление ИТ-активами – скучная рутина или
-								творческая задача?
-							</h2>
-							<p class="cardArticle__text">
-								Размышляя об управлении ИТ-активами, я вспомнил
-								один учебный пример. Менеджер по ИТ-мощностям в
-								крупной компании периодически готовил толстенный
-								отчёт руководству. В очередной раз он не принёс
-								отчёт, решив проверить, нужен ли он вообще.
-							</p>
-							<time class="cardArticle__date">13 дек 2020 </time>
-						</article>
-						<ul class="listArticles">
-							<li class="listArticles__item">
-								<article
-									class="cardArticle cardArticle_sizeHeight"
-								>
-									<a class="cardArticle__linkCategory" href=""
-										>Категория 1
-									</a>
-									<h2 class="cardArticle__title">
-										Управление ИТ-активами – скучная рутина
-										или творческая задача?
-									</h2>
-									<p class="cardArticle__text">
-										Размышляя об управлении ИТ-активами, я
-										вспомнил один учебный пример. Менеджер
-										по ИТ-мощностям в крупной компании
-										периодически готовил толстенный отчёт
-										руководству. В очередной раз он не
-										принёс отчёт, решив проверить, нужен ли
-										он вообще.
-									</p>
-									<time class="cardArticle__date"
-										>13 дек 2020
-									</time>
-								</article>
-							</li>
-							<li class="listArticles__item">
-								<article
-									class="cardArticle cardArticle_sizeHeight listArticles_themeBlue"
-								>
-									<a class="cardArticle__linkCategory" href=""
-										>Категория 1
-									</a>
-									<h2 class="cardArticle__title">
-										ITAM&SAMDay – самая настоящая удача!
-									</h2>
-									<time class="cardArticle__date"
-										>13 дек 2020
-									</time>
-								</article>
-							</li>
-							<li class="listArticles__item">
-								<article
-									class="cardArticle cardArticle_sizeHeight listArticles_themeImg"
-								>
-									<a class="cardArticle__linkCategory" href=""
-										>Очень длинная категория 2
-									</a>
-									<h2 class="cardArticle__title">
-										ITAM&SAMDay – самая настоящая удача!
-									</h2>
-									<time class="cardArticle__date"
-										>13 дек 2020
-									</time>
-								</article>
-							</li>
-							<li class="listArticles__item">
-								<article class="cardArticle">
-									<a class="cardArticle__linkCategory" href=""
-										>Категория 1
-									</a>
-									<h2 class="cardArticle__title">
-										Управление ИТ-активами – скучная рутина
-										или творческая задача слово слово и еще
-										длинное слово после чего ...
-									</h2>
-									<time class="cardArticle__date"
-										>13 дек 2020
-									</time>
-								</article>
-							</li>
-							<li class="listArticles__item">
-								<article class="cardArticle">
-									<a class="cardArticle__linkCategory" href=""
-										>Категория 1
-									</a>
-									<h2 class="cardArticle__title">
-										ITAM&SAMDay – самая настоящая удача!
-									</h2>
-									<time class="cardArticle__date"
-										>13 дек 2020
-									</time>
-								</article>
-							</li>
-							<li class="listArticles__item">
-								<article
-									class="cardArticle cardArticle_sizeHeight"
-								>
-									<a class="cardArticle__linkCategory" href=""
-										>Категория 1
-									</a>
-									<h2 class="cardArticle__title">
-										Управление ИТ-активами – скучная рутина
-										или творческая задача?
-									</h2>
-									<p class="cardArticle__text">
-										Размышляя об управлении ИТ-активами, я
-										вспомнил один учебный пример. Менеджер
-										по ИТ-мощностям в крупной компании
-										периодически готовил толстенный отчёт
-										руководству. В очередной раз он не
-										принёс отчёт, решив проверить, нужен ли
-										он вообще.
-									</p>
-									<time class="cardArticle__date"
-										>13 дек 2020
-									</time>
-								</article>
-							</li>
-							<li class="listArticles__item">
-								<article
-									class="cardArticle cardArticle_sizeHeight listArticles_themeBlue"
-								>
-									<a class="cardArticle__linkCategory" href=""
-										>Категория 1
-									</a>
-									<h2 class="cardArticle__title">
-										ITAM&SAMDay – самая настоящая удача!
-									</h2>
-									<time class="cardArticle__date"
-										>13 дек 2020
-									</time>
-								</article>
-							</li>
-							<li class="listArticles__item">
-								<article
-									class="cardArticle cardArticle_sizeHeight listArticles_themeImg"
-								>
-									<a class="cardArticle__linkCategory" href=""
-										>Очень длинная категория 2
-									</a>
-									<h2 class="cardArticle__title">
-										ITAM&SAMDay – самая настоящая удача!
-									</h2>
-									<time class="cardArticle__date"
-										>13 дек 2020
-									</time>
-								</article>
-							</li>
-							<li class="listArticles__item">
-								<article class="cardArticle">
-									<a class="cardArticle__linkCategory" href=""
-										>Категория 1
-									</a>
-									<h2 class="cardArticle__title">
-										Управление ИТ-активами – скучная рутина
-										или творческая задача слово слово и еще
-										длинное слово после чего ...
-									</h2>
-									<time class="cardArticle__date"
-										>13 дек 2020
-									</time>
-								</article>
-							</li>
-							<li class="listArticles__item">
-								<article class="cardArticle">
-									<a class="cardArticle__linkCategory" href=""
-										>Категория 1
-									</a>
-									<h2 class="cardArticle__title">
-										ITAM&SAMDay – самая настоящая удача!
-									</h2>
-									<time class="cardArticle__date"
-										>13 дек 2020
-									</time>
-								</article>
-							</li>
-						</ul>
-						<ul class="pagination">
-							<li class="pagination__item">
-								<a
-									class="pagnation__link pagnation__link_current"
-									>1</a
-								>
-							</li>
-							<li class="pagination__item">
-								<a href="#" class="pagnation__link">2</a>
-							</li>
-							<li class="pagination__item">
-								<a href="#" class="pagnation__link">3</a>
-							</li>
-							<li class="pagination__item">
-								<a href="#" class="pagnation__link">4</a>
-							</li>
-						</ul>
-					</div>
-					<aside class="sidebar">
-						<div class="popularArticle">
-							<h2 class="popularArticle__title">
-								Популярные новости
-							</h2>
-							<ul class="popularArticle__list">
-								<li class="popularArticle__item">
-									<article
-										class="cardArticle cardArticleMini"
-									>
-										<h3
-											class="cardArticle__title_sizePopular"
-										>
-											ITAM&SAMDay – самая настоящая удача!
-										</h3>
-										<time class="cardArticle__date"
-											>13 дек 2020
-										</time>
-									</article>
-								</li>
-								<li class="popularArticle__item">
-									<article
-										class="cardArticle cardArticleMini"
-									>
-										<h3
-											class="cardArticle__title_sizePopular"
-										>
-											Секреты лицензирования. Всё, что вы
-											хотели знать про Microsoft, SAP и
-											Oracle, но не знали, у кого спросить
-											...
-										</h3>
-										<time class="cardArticle__date"
-											>10 дек 2020
-										</time>
-									</article>
-								</li>
-								<li class="popularArticle__item">
-									<article
-										class="cardArticle cardArticleMini"
-									>
-										<h3
-											class="cardArticle__title_sizePopular"
-										>
-											Менеджмент XXI века. Надо ли
-											готовиться к изменениям или мы давно
-											уже должны были измениться?
-										</h3>
-										<time class="cardArticle__date"
-											>5 дек 2020
-										</time>
-									</article>
-								</li>
-							</ul>
-						</div>
-						<div class="subscribe">
-							<h3 class="subscribe__title h2">
-								Подписка на рассылку
-							</h3>
-							<form action="#" class="subscribe__form subForm">
-								<input
-									class="subForm__email"
-									type="email"
-									placeholder="Email@gmail.com"
-								/>
-								<button class="subForm__btn">
-									Подписаться
-									<svg></svg>
-								</button>
-							</form>
-						</div>
-					</aside>
-				</div>
-			</section>
-
-			<footer class="footer">
+		<main class="main">
+			<section class="hero">
 				<div class="container">
-					<a class="logo">
-						<img src="./img/header/logo.svg" alt="logo" />
-					</a>
-					<nav class="footerNav navigate">
-						<ul class="navigate__list">
-							<li class="navigate__item">
-								<a class="navigate__link" href="#">Главная</a>
-							</li>
-							<li class="navigate__item">
-								<a class="navigate__link" href="#">О нас</a>
-							</li>
-							<li class="navigate__item">
-								<a class="navigate__link" href="#">Контакты</a>
-							</li>
-							<li class="navigate__item">
-								<a class="navigate__link" href="#">Поиск</a>
-							</li>
-						</ul>
-					</nav>
-					<small class="footer__copy"
-						>ООО “Организация” 2020. Все права защищены</small
-					>
+					<p class="hero__subtitle">A place where</p>
+					<h1 class="hero__title">
+						A creative&nbsp;agency for&nbsp;redemptive brands
+					</h1>
+					<p class="hero_description">
+						Anteelo is a leading strategic design firm that builds
+						powerful&nbsp;digital solutions for startups and
+						enterprises.
+					</p>
+					<a class="link linkFocused" href="#">Get in touch</a>
 				</div>
-			</footer>
+			</section>
+			<section class="services">
+				<div class="container">
+					<h2 class="services__title">
+						Deation &amp;&nbsp;Evaluation&nbsp;&mdash; Best Way
+						to&nbsp;Kick off Your Product Idea
+					</h2>
+					<ul class="services__list">
+						<li class="listItem">
+							<h3 class="listItem__subtitle">
+								Product Design Sprint
+							</h3>
+							<p class="listItem__description">
+								A&nbsp;five-day workshop that will help you
+								answer crucial business questions
+							</p>
+							<a class="link linkFocused" href="#">Read More</a>
+						</li>
+						<li class="listItem">
+							<h3 class="listItem__subtitle">Scoping Session</h3>
+							<p class="listItem__description">
+								A&nbsp;workshop aimed at&nbsp;shaping your
+								business idea, answering questions regarding
+								project planning
+							</p>
+							<a class="link linkFocused" href="#">Read More</a>
+						</li>
+						<li class="listItem">
+							<h3 class="listItem__subtitle">UX Review</h3>
+							<p class="listItem__description">
+								An&nbsp;evaluation which will help you radically
+								improve your product.
+							</p>
+							<a class="link linkFocused" href="#">Read More</a>
+						</li>
+						<li class="listItem">
+							<h3 class="listItem__subtitle">Code Review</h3>
+							<p class="listItem__description">
+								Do&nbsp;you know what one of&nbsp;the key
+								secrets of&nbsp;success is&nbsp;what makes
+								people successful in&nbsp;business
+							</p>
+							<a class="link linkFocused" href="#">Read More</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="lets">
+				<div class="container">
+					<h2 class="lets__title">
+						Let&rsquo;s make something amazing together.
+					</h2>
+					<a href="#" class="lets__link link">Let's get started</a>
+				</div>
+			</section>
 		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footerTop"></div>
+				<div class="footerMidle"></div>
+				<div class="footerBottom"></div>
+			</div>
+		</footer>
 	</body>
 </html>
